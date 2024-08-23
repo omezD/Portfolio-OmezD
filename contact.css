@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('career-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color:rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("bg.jpeg");
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgb(17, 17, 17);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 29px 58px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: #ffff;
+ 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-section {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.contact-info {
+    flex-basis: 70%;
+    text-align: right;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #008CBA;
+    color:rgb(17, 17, 17);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color:rgb(13, 13, 30);
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 1px solid #fff;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
